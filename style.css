@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b7b7b7;
+}
+.cader{
+    display: flex;
+    justify-content: space-around;/* Space between the cards */
+    align-items: stretch;/* Stretch cards to the same height */
+    padding: 20px;
+    gap: 20px;/* Gap between cards */
+    position: relative;
+    top: 100px;
+}
+.col{
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    height: 65vh;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.col:hover{
+    border: 1px solid black;
+    outline: 2px;
+}
+.col img{
+   width: 100%;
+   height: 250px;
+   border-radius: 9px;
+
+}
+.bnt-1{
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: pink;
+    color: palevioletred;
+    padding: 5px 9px 5px 9px;
+}
+.bnt-2{
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: rgb(0, 179, 255);
+    color: rgb(0, 38, 255);
+    padding: 5px 9px 5px 9px;
+}
+.bnt-3{
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: rgb(88, 236, 88);
+    color: green;
+    padding: 5px 9px 5px 9px; 
+}
+.col P{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.fa-solid{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .cader, .col{
+        padding: 15px;
+    }
+}
+@media (max-width: 900px){
+    .cader{
+        flex-direction: column;
+    }
+}
